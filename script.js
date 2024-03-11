@@ -1,16 +1,29 @@
 // Array de produtos
 const produtos = [
   {
-    nome: "Corda Earneball",
-    imagem: "corda1.jpeg",
-    descricao: "Corda para baixo elétrico de alta qualidade."
+      nome: "Corda Earneball",
+      imagem: "corda1.jpeg",
+      descricao: "Corda para baixo elétrico de alta qualidade."
   },
   {
-    nome: "Amplificador Marshall",
-    imagem: "amp.JPEG",
-    descricao: "Amplificador de guitarra Marshall, perfeito para performances ao vivo."
+      nome: "Amplificador Marshall",
+      imagem: "amp.JPEG",
+      descricao: "Amplificador de guitarra Marshall, perfeito para performances ao vivo."
+  },
+  {
+      nome: "Correia de Guitarra",
+      imagem: "correia1.jpeg", // Substitua 'correia.jpeg' pelo caminho correto da imagem
+      descricao: "Correia de guitarra confortável e durável."
+  },
+  {
+      nome: "Baixo Elétrico Fender",
+      imagem: "baixo1.jpeg", // Substitua 'baixo.jpeg' pelo caminho correto da imagem
+      descricao: "Baixo elétrico Fender, ideal para músicos que buscam qualidade e versatilidade."
   }
 ];
+
+// Certifique-se de que a função gerarCards() e a lógica de filtragem ainda estão implementadas conforme descrito anteriormente.
+
 
 // Função para gerar os cards dos produtos
 function gerarCards(produtosFiltrados) {
