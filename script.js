@@ -13,11 +13,12 @@ const produtos = [
 ];
 
 // Função para gerar os cards dos produtos
-function gerarCards() {
+function gerarCards(produtosFiltrados) {
   const listaProdutos = document.getElementById("listaProdutos");
+  listaProdutos.innerHTML = ''; // Limpa a lista de produtos antes de adicionar os novos cards
 
-  for (let i = 0; i < produtos.length; i++) {
-    const produto = produtos[i];
+  for (let i = 0; i < produtosFiltrados.length; i++) {
+    const produto = produtosFiltrados[i];
     
     const card = document.createElement("div");
     card.classList.add("card-produto");
@@ -41,6 +42,20 @@ function gerarCards() {
   }
 }
 
-// Chamada da função para gerar os cards ao carregar a página
-window.onload = gerarCards;
+// Chamada da função para gerar os cards ao carregar a página com todos os produtos
+window.onload = function() {
+  gerarCards(produtos);
+};
+
+// Função para filtrar os produtos com base na pesquisa
+function filtrarProdutos() {
+  const textoPesquisa = document.getElementById("campoPesquisa").value.toLowerCase();
+  const produtosFiltrados = produtos.filter(produto => produto.nome.toLowerCase().includes(textoPesquisa));
+  gerarCards(produtosFiltrados); // Atualiza os cards com os produtos filtrados
+}
+
+// Adiciona o event listener ao botão de pesquisar
+const botaoPesquisar = document.getElementById("botaoPesquisar");
+botaoPesquisar.addEventListener("click", filtrarProdutos);
+
 
