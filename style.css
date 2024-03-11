@@ -1,0 +1,14 @@
+.card-produto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-produto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-produto p {
+  font-size: 16px;
+  margin-top: 10px;
+}
