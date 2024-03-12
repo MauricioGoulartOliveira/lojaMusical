@@ -6,14 +6,14 @@ const produtos = [
       descricao: "Corda para baixo elétrico de alta qualidade."
   },
   {
-      nome: "Amplificador Marshall",
+      nome: "Amplificador Ampeg",
       imagem: "amp.JPEG",
-      descricao: "Amplificador de guitarra Marshall, perfeito para performances ao vivo."
+      descricao: "Amplificador de contrabaixo, perfeito para performances ao vivo."
   },
   {
-      nome: "Correia de Guitarra",
+      nome: "Correia de contrabaixo",
       imagem: "correia1.jpeg", // Substitua 'correia.jpeg' pelo caminho correto da imagem
-      descricao: "Correia de guitarra confortável e durável."
+      descricao: "Correia de baixo confortável e durável."
   },
   {
       nome: "Baixo Elétrico Fender",
